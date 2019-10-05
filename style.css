@@ -2,8 +2,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: #ffffff;
-    border-color: #cccccc;
+   
 }
     body {
         margin:0 auto;
@@ -33,8 +32,8 @@
       font-weight: bolder;
       }
 
-      main {
-        background-image: url("images/gravel.png");
+      content {
+        background-image: url(../TDGJavaScriptHW/photos/stripes-light.png);
         background-repeat:no-repeat;
         background-size:contain;
         background-position:center;
@@ -47,7 +46,7 @@
         background-color: #4aaaa5;
         color: white;
         padding: 30px;
-        margin: 0px;
+        margin-left: 0;
         display: inline-block;
       }
 
@@ -79,8 +78,17 @@
         color: white;
         text-align: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+    }
 
+    #wrapper{
+      max-width:960px;
+      margin-top: 40px;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
 
    /* //Portfolio Style Page // */
 
@@ -104,13 +112,13 @@
   
   figcaption{
     background-color:#4aaaa5;
-    color: darkgrey;
+    color: white;
     text-align:center;
     position: absolute;
     font-size: 25px;   
     float:right;
     bottom:25px;
-    width:300px;
+    width:400px;
     margin-left: 20px;
   }
 
@@ -118,9 +126,9 @@
 
     input[type=text],
     input[type=email]{
-	width:50%;
-	padding: 12px 20px;
-	margin-bottom:25px;
+    width:50%;
+    padding: 12px 20px;
+    margin-bottom:25px;
     border: 2px solid #999;
     color:#DCDCDC;
 }
@@ -155,26 +163,99 @@
 
   /* // Media Queries // */
 
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 980px) {
     body {
-        margin: 0 auto;
-        width: 100%;
+      margin: 0 auto;
+      width: 100%;
+  }
+  
+    #wrapper{
+      max-width:980px;
+      margin-top: 30px;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+  
+    h1{
+      font-size:30px;
+      margin-left: 0px;
+      padding: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     ul {
-        margin-right:0;
+        margin-right:0px;
     }
 
-   @media only screen and (min-width: 768px) {
+    section,aside{
+      background-color:white;
+      margin-top:85px;
+    }
+  }
+    
+   @media only screen and (max-width: 768px) {
     body {
         margin: 0 auto;
         width: 100%;
     }
 
-    h1 {
-        margin-left:30px;
-        font-size: 30px;
+    #wrapper{
+      max-width:768px;
+      margin-top: 40px;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
     }
 
+    h1{
+      margin-left: 0px;
+      font-size:30px;
+      padding: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    nav{
+      margin-right:0;
+    }
+    
+    section,aside{
+      float:none;
+      width:600px;
+      background-color:white;
+      margin-left: auto;
+      margin-right:auto;
+    }
+    
+    section{
+      margin-top: 85px;
+    }
 
-   
+  }
+
+   /* //Password// */
+
+ .content{
+   margin-top:10px;
+   margin-bottom:10px;
+   background-color: #4aaaa5;
+   padding: 20px;
+   width: 100%;
+ }
+
+ #display{
+   width: 100%;
+ }
+ 
+ #length {
+   display: inline-block;
+   width: 100px;
+ }
+
+ #slider{
+   width: 100%;
+ }

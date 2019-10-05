@@ -8,11 +8,32 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 
 
 <body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-sm-12 mx-auto">
+            <div class="content">
+                <h4>Password Generator</h4>
+                <br />
+                <h5>Generate a Password </h5>
+                <br />
+                <input type="text" id="display">
+                <br />
+                <input type="range" min="0" max="128" name="slider" id="slider">
+                <br />
+                <button onclick="generate()"> Generate Password </button>
+                <button onclick=""> Copy to Clipboard </button>
+                <div id="length"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div id="container">
         <div id="header">
             <h1> Tara DeGuzman</h1>
@@ -42,6 +63,6 @@
 
     </div>
 
-
+    <script type="text/JavaScript" src="script.js"></script>
 </body>
 </html>
