@@ -22,11 +22,17 @@
                 <br />
                 <h5>Generate a Password </h5>
                 <br />
-                <input type="text" id="display">
+                How many characters? <input type = "number" id = "charNum" value = " " min = "8" max = "128"></input>
+                <br />
+                Add Number: <input type = "checkbox" id = "num"></input>
+                Add Symbol: <input type = "checkbox" id = "sym"></input>
                 <br />
                 <br/>
-                <button onclick="generate()" id="pwd"> Generate Password </button>
-                <button onclick="copy()" id="copy"> Copy to Clipboard </button>
+                <button id="submit"> Generate Password </button>
+                <button onclick="copyPassword()" id= "copyPassword"> Copy to Clipboard </button>
+                <br />
+                <br />
+               Your Password <input type="text" id="yourPwd"></input>
             </div>
         </div>
     </div>
