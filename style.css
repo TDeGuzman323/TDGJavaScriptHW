@@ -35,6 +35,18 @@
    border: 5px;   
  }
 
+ #charNum {
+  font-family: "Cormorant Garaomond", serif;
+ }
+
+
+ #yourPwd {
+  font-family: "Cormorant Garaomond", serif;
+ }
+
+ p {
+  font-family: "Cormorant Garaomond", serif;
+ }
  #submit{
    padding: 10px;
    font-family: "Cormorant Garaomond", serif;
